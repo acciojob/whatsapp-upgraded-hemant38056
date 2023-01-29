@@ -88,10 +88,9 @@ public class WhatsappService {
     public int createMessage(String content){
         int id = totalMessages.size() + 1;
 //        message.setId(id);
-        Date date = new Date();
 //        message.setContent(content);
 
-        Message message = new Message(id, content, date);
+        Message message = new Message(id, content);
         totalMessages.add(message);
         return id;
     }
